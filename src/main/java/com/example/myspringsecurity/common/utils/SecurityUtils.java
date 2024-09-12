@@ -8,6 +8,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.example.myspringsecurity.common.constant.HttpStatus;
 import com.example.myspringsecurity.common.core.model.LoginUser;
+import com.example.myspringsecurity.common.exception.ServiceException;
 
 public class SecurityUtils
 {

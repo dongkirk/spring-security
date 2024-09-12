@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.myspringsecurity.common.utils.SecurityUtils;
 import com.example.myspringsecurity.dto.SysUser;
 import com.example.myspringsecurity.service.impl.SysUserService;
 import com.example.myspringsecurity.vo.AjaxResult;
@@ -34,6 +35,8 @@ public class SysUserController {
 //        }
         user.setCreateBy("admin");
         user.setPassword(SecurityUtils.encryptPassword(user.getPassword()));
-        return toAjax(userService.insertUser(user));
+        //return toAjax(userService.insertUser(user));
+
+        return null;
     }
 }
